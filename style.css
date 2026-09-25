@@ -292,7 +292,9 @@ footer {
   font-size: 0.85rem;
   border-top: 1px solid var(--color-border);
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
 }
 footer ul {
   display: flex;
@@ -314,6 +316,9 @@ footer li {
   }
 }
 @media (min-width: 768px) {
+  h2 {
+    margin-top: 2rem;
+  }
   .header__burger {
     display: none;
   }
@@ -331,6 +336,9 @@ footer li {
 @media (min-width: 600px) {
   .lcomp {
     grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    flex-direction: row;
   }
 }
 @media (min-width: 992px) {
